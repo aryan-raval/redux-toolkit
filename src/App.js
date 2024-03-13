@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import AddUSer from './components/AddUser';
+import DisplayUser from './components/DisplayUser';
+import NewDisplay from './NewComponent/NewDisplay';
+import List from './todolist/List';
+import ApiList from './apiData/ApiList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<><AddUSer/><DisplayUser/></>} />
+        <Route path='/newcomp' element={<NewDisplay/>} />
+        <Route path='/todolist' element={<List/>} />
+        <Route path='/apilist' element={<ApiList/>} />
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,11 +1,55 @@
-.App {
+.user-item {
+  background-color: skyblue;
+  margin:10px 25%;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.add-user-main{
+  margin: 0 35%;
+  margin-top: 20px;
+  padding: 50px 10px;
   text-align: center;
+  background-color:cadetblue;
+  width: 30%;
 }
+.display-user-main{
+  margin: 10px 35%;
+  padding: 50px 10px;
+  text-align: center;
+  background-color: aliceblue;
+  width: 30%;
+  overflow: auto;
+  height: 300px;
+}
+.links{
+  text-decoration: none;
+  color: black;
+  background-color: aliceblue;
+  border-radius: 5px;
+  padding: 5px;
+  text-transform: capitalize;
+  font-size: 15px;
+  width: 50px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
+.btn{
+  width: 100px;
+  height: 35px;
+  display: block;
+  margin-top: 15px;
+}
+.display-todo-user {
+  margin: 10px 7%;
+  padding: 50px 10px;
+  text-align: center;
+  background-color: aliceblue;
+  width: 82%;
+  overflow: auto;
+  height: 300px;}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
